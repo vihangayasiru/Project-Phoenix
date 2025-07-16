@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpeg" alt="SL Bus System Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="timetable.html">Time Table & Tickets</a></li>
+                    <li><a href="booking.html">E-Ticket and Booking</a></li>
+                    <li><a href="tracking.html">Bus Tracking System</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        <h2>About This Website</h2>
+        <p>
+            This website helps commuters find bus schedules, track buses in real-time, and soon, book tickets online.
+            Focused on improving transport services in Sri Lanka.
+        </p>
+
+      
+        <section class="help-desk-section">
+            <h2>Help Desk & Support</h2>
+            <p>Need assistance? Our help desk is here to support you with any questions or issues.</p>
+
+            <div class="help-desk-info">
+                <div class="help-item">
+                    <h4>📞 Phone Support</h4>
+                    <p><strong>Hotline:</strong> +94 11 234 5678<br>
+                        <strong>Hours:</strong> 24/7 Available<br>
+                        <strong>Languages:</strong> Sinhala, Tamil, English
+                    </p>
+                </div>
+
+                <div class="help-item">
+                    <h4>✉️ Email Support</h4>
+                    <p><strong>General:</strong> support@slbussystem.lk<br>
+                        <strong>Technical:</strong> tech@slbussystem.lk<br>
+                        <strong>Response Time:</strong> Within 24 hours
+                    </p>
+                </div>
+
+                <div class="help-item clickable-chat" onclick="openWhatsApp()">
+                    <h4>💬 Live Chat</h4>
+                    <p><strong>Available:</strong> Mon-Fri 8AM-8PM<br>
+                        <strong>Platform:</strong> Website & Mobile App<br>
+                        <strong>Average Wait:</strong> Under 5 minutes
+                    </p>
+                    <div class="chat-button">Click to Chat</div>
+                </div>
+
+            </div>
+        </section>
+
+       
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+
+           
+            <div class="team-leader-container">
+                <div class="team-member leader">
+                    <h3 class="role">Team Leader</h3>
+                    <img src="Members Photos\Kavindu Pic.jpeg" alt="Kavindu Kalhara">
+                    <h4>Kavindu Kalhara</h4>
+                    <p>📞 +94 76 465 7929<br>✉ kavindulokusooriya@gmail.com</p>
+                </div>
+            </div>
+
+            
+            <div class="team-grid">
+
+                <div class="team-member">
+                    <h3 class="role">Role 1</h3>
+                    <img src="Members Photos\Vihanga Pic.jpeg" alt="Vihanga Yasiru">
+                    <h4>Vihanga Yasiru</h4>
+                    <p>📞 +94 76 559 3394<br>✉ vihagayasiru855@gmail.com</p>
+                </div>
+
+                <div class="team-member">
+                    <h3 class="role">Role 2</h3>
+                    <img src="Members Photos\Hashitha Pic.jpeg" alt="Hashitha Nethmina">
+                    <h4>Hashitha Nethmina</h4>
+                    <p>📞 +94 76 067 0281<br>✉ nethminahashitha81@gmail.com</p>
+                </div>
+
+                <div class="team-member">
+                    <h3 class="role">Role 3</h3>
+                    <img src="Members Photos\Sonadi Pic.jpeg" alt="Sonadi Premadasa">
+                    <h4>Sonadi Premadasa</h4>
+                    <p>📞 +94 70 140 2417<br>✉ sonadipremadasa@gmail.com</p>
+                </div>
+
+                <div class="team-member">
+                    <h3 class="role">Role 4</h3>
+                    <img src="Members Photos\Devini Pic.jpeg" alt="Devini Yashodara">
+                    <h4>Devini Yashodara</h4>
+                    <p>📞 +94 76 242 4466<br>✉ deviniyk003@gmail.com</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function openWhatsApp() {
+
+            const whatsappNumber = "94765593394";
+
+
+            const message = "Hello! I need help with SL Bus System. Can you assist me?";
+
+
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>

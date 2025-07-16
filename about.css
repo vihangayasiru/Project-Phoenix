@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #2196f3;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 12px;
+}
+
+.team-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.team-leader-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    background: #f7ff5f;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+.team-member.leader {
+    background: #e3f2fd;
+    border: 2px solid #2196f3;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.role {
+    color: #2196f3;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.help-desk-section {
+    background: #ffffff;
+    padding: 0rem;
+    margin: 0rem 0;
+    border-radius: 10px;
+}
+
+.help-desk-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.help-item {
+    background: rgb(248, 151, 255);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 220px;
+    position: relative;
+}
+
+.clickable-chat {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.clickable-chat:hover {
+    background: #e8f5e8;
+    border-color: #25D366;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.chat-button {
+    background: #25D366;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.chat-button:hover {
+    background: #128C7E;
+}
+
+.help-item h4 {
+    color: #2196f3;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .team-member {
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 70px;
+    }
+}

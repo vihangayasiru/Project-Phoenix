@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table & Tickets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="timetable.css">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.jpeg" alt="SL Bus System Logo">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="timetable.html">Time Table & Tickets</a></li>
+            <li><a href="booking.html">E-Ticket and Booking</a></li>
+            <li><a href="tracking.html">Bus Tracking System</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <h1>Bus Timetables & Ticket Prices</h1>
+        <p>Find accurate bus schedules and ticket prices for your journey</p>
+      </div>
+
+      <div class="quick-search">
+        <div class="quick-route" data-route="colombo-kandy">
+          <h3>Colombo ↔ Kandy</h3>
+          <p>Popular mountain route</p>
+        </div>
+        <div class="quick-route" data-route="colombo-galle">
+          <h3>Colombo ↔ Galle</h3>
+          <p>Scenic coastal route</p>
+        </div>
+        <div class="quick-route" data-route="colombo-jaffna">
+          <h3>Colombo ↔ Jaffna</h3>
+          <p>Northern expressway</p>
+        </div>
+        <div class="quick-route" data-route="kandy-nuwara-eliya">
+          <h3>Kandy ↔ Nuwara Eliya</h3>
+          <p>Hill country route</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Bus Timetable</h2>
+        <div class="form-group">
+          <div class="form-field">
+            <label for="timetableSelect">Select Route:</label>
+            <select id="timetableSelect">
+              <option value="">--Select Route--</option>
+              <option value="colombo-kandy">Colombo - Kandy</option>
+              <option value="colombo-galle">Colombo - Galle</option>
+              <option value="colombo-jaffna">Colombo - Jaffna</option>
+              <option value="kandy-nuwara-eliya">Kandy - Nuwara Eliya</option>
+              <option value="galle-matara">Galle - Matara</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate">
+          </div>
+          <div class="form-field">
+            <button class="btn" id="showTimetableBtn">Show Timetable</button>
+          </div>
+        </div>
+        <div id="timetableContainer" class="result-container"></div>
+      </div>
+
+      <div class="section">
+        <h2>Ticket Prices</h2>
+        <div class="form-group">
+          <div class="form-field">
+            <label for="priceSelect">Select Route:</label>
+            <select id="priceSelect">
+              <option value="">--Select Route--</option>
+              <option value="colombo-kandy">Colombo - Kandy</option>
+              <option value="colombo-galle">Colombo - Galle</option>
+              <option value="colombo-jaffna">Colombo - Jaffna</option>
+              <option value="kandy-nuwara-eliya">Kandy - Nuwara Eliya</option>
+              <option value="galle-matara">Galle - Matara</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="busType">Bus Type:</label>
+            <select id="busType">
+              <option value="normal">Normal Bus</option>
+              <option value="semi-luxury">Semi-Luxury</option>
+              <option value="luxury">Luxury</option>
+              <option value="ac">Air Conditioned</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <button class="btn" id="showPriceBtn">Show Ticket Price</button>
+          </div>
+        </div>
+        <div id="priceContainer" class="result-container"></div>
+      </div>
+    </main>
+
+
+    <script src="timetable.js"></script>
+  </body>
+
+</html>

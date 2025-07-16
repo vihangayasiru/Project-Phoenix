@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Bus Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="traking.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpeg" alt="SL Bus System Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Time Table & Tickets</a></li>
+          <li><a href="booking.html">E-Ticket and Booking</a></li>
+          <li><a href="tracking.html">Bus Tracking System</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <div id="map">
+    <button id="refreshBtn">🔄 Refresh</button>
+  </div>
+
+
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="tracking.js"></script>
+</body>
+
+</html>
